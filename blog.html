@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<!-- Informacoes Basicas do Site
+    ================================================== -->
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Academind</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
+	</script>
+	<script type="text/javascript" src="js/funcoes.js">
+	</script>
+
+
+
+	<!-- ==============================================
+	Favicons -  Icones Pequenos do Site
+	=============================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/android-chrome-512x512.ico">
+
+	<!-- ==============================================
+	CSS VENDOR
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/animate.min.css">
+
+	<!-- ==============================================
+	Estilo CSS
+	=============================================== -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+</head>
+
+<body>
+
+	<!-- Ao Carregar a pagina-->
+	<div class="animationload">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Icone para voltar para o Topo-->
+	<a href="#0" class="cd-top cd-is-visible cd-fade-out">Topo</a>
+
+	<!-- Cabecalho -->
+	<div class="header header-1">
+
+		<!-- Barra de Menus -->
+		<div class="navbar-main">
+			<div class="container">
+				<nav id="navbar-example" class="navbar navbar-expand-lg">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="" />
+					</a>
+			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			            <span class="navbar-toggler-icon"></span>
+			        </button>
+			        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			            <ul class="navbar-nav ml-auto">
+			            
+							<li class="nav-item">
+                <a class="nav-link" href="index.html">Pagina Principal</a>
+							</li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#info">Informações sobre Depressão</a>
+			        </li>
+
+							<li class="nav-item">
+                <a class="nav-link" href="index.html#sobre">O que esperar?</a>
+			        </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#depoimentos">Relato de Casos</a>
+							</li>
+
+							<li class="nav-item">
+                <a class="nav-link" href="index.html#local">Locais de Atendimento</a>
+			        </li>
+
+							<li class="nav-item">
+                <a class="nav-link" href="index.html#contact">Contato</a>
+							</li>
+
+							<li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+							</li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+			        </li>
+							
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#equipe">Equipe do Projeto Academind</a>
+							</li>
+			               
+			            </ul>
+			            <div class="sosmed-icon float-right d-inline-flex">
+							<a href="#"><i class="fa fa-facebook"></i></a> 
+							<a href="#"><i class="fa fa-twitter"></i></a> 
+						
+						</div>
+			        </div>
+			    </nav>
+			</div>
+		</div>
+
+    </div>
+
+	<!-- Blog -->
+	<div id="blog" class="section bg-green">
+		<div class="content-wrap">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-12 col-md-12">
+						<h2 class="section-heading text-center">
+							Blog da Pagina
+						</h2>
+					</div>
+
+				</div>
+
+				<div class="row mt-5">
+						
+					<div class="col-sm-12 col-md-12">
+						<form action="#" class="form-contact form-contact-dark" id="frmCadastro" data-toggle="validator">
+							<div class="row">
+								<div class="col-sm-6 col-md-6">
+									<div class="form-group">
+										<label for="txtNome">Nome:</label>
+										<input type="text" id="txtNome"placeholder="Digite aqui o seu Nome"/>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6">
+									<div class="form-group">
+										<label for="txtTitulo">Título:</label>
+										<input type="text" id="txtTitulo" placeholder="Titulo" />	
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								
+								<div class="col-sm-6 col-md-6">
+									<div class="form-group">
+										<label for="txtMensagem">Mensagem:</label>
+										<input type="text" id="txtMensagem" class="resizedTextbox" placeholder="Digite aqui a sua Mensagem"/>
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<div class="text-center">
+									<div id="success"></div>
+									<input type="submit" value="Salvar" id="btnSalvar"/>
+								</div>
+							</div>
+						</form>	
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div>
+		<table id="tblListar">
+
+		</table>
+	</div>
+<div id="copyright" class="container">
+	<p>Informacoes de Contato</p>
+</div>
+</body>
+</html>
